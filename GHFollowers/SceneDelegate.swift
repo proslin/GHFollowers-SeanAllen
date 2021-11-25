@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         
-       
+       print("Hello")
         
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
