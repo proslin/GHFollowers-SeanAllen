@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E60097A2760AFB2006D60AC /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6009792760AFB2006D60AC /* UIHelper.swift */; };
 		3E63A863275F3CC0003BECB9 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E63A862275F3CC0003BECB9 /* ErrorMessage.swift */; };
 		3E63A866275F503C003BECB9 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E63A865275F503C003BECB9 /* FollowerCell.swift */; };
 		3E63A868275F50F8003BECB9 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E63A867275F50F8003BECB9 /* GFAvatarImageView.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E6009792760AFB2006D60AC /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		3E63A862275F3CC0003BECB9 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		3E63A865275F503C003BECB9 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		3E63A867275F50F8003BECB9 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				3E63A862275F3CC0003BECB9 /* ErrorMessage.swift */,
+				3E6009792760AFB2006D60AC /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				3EDE96D0274D08DC002FBDDA /* FavoritesListVC.swift in Sources */,
 				3E77D7362750C962009A67E7 /* GFButton.swift in Sources */,
 				3E75CF942756266100D7F36F /* UIViewController+Ext.swift in Sources */,
+				3E60097A2760AFB2006D60AC /* UIHelper.swift in Sources */,
 				3E63A868275F50F8003BECB9 /* GFAvatarImageView.swift in Sources */,
 				3EDE96CC274D0617002FBDDA /* SearchVC.swift in Sources */,
 				3E75CF922756147700D7F36F /* GFAlertVC.swift in Sources */,
