@@ -31,7 +31,7 @@ class GFItemInfoView: UIView {
        addSubview(symbolImageView)
         addSubview(tittleLabel)
         addSubview(countLabel)
-        symbolImageView.translatesAutoresizingMaskIntoConstraints = true
+        symbolImageView.translatesAutoresizingMaskIntoConstraints = false
         symbolImageView.contentMode = .scaleAspectFill
         symbolImageView.tintColor = .label
         
@@ -68,7 +68,7 @@ class GFItemInfoView: UIView {
             tittleLabel.text = "Followers"
         case .following:
             symbolImageView.image = UIImage(systemName: SFSymbols.following)
-            tittleLabel.text = "F  ollowing"
+            tittleLabel.text = "Following"
         }
         
         countLabel.text = String(count)
