@@ -33,9 +33,7 @@ class GFItemInfoView: UIView {
     }
     
     private func configure() {
-        addSubview(symbolImageView)
-        addSubview(tittleLabel)
-        addSubview(countLabel)
+        addSubviews(symbolImageView, tittleLabel, countLabel)
         symbolImageView.translatesAutoresizingMaskIntoConstraints = false
         symbolImageView.contentMode = .scaleAspectFill
         symbolImageView.tintColor = .label
