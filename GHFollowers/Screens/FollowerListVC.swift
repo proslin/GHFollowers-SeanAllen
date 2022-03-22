@@ -99,7 +99,7 @@ class FollowerListVC: GFDataLoadingVC {
                 if followers.count < 100 { self.hasMoreFollowers = false}
                 self.followers.append(contentsOf: followers)
                 if self.followers.isEmpty {
-                    let message = "This user doesn't have any followers. Go follow them 😀"
+                    let message = "This user doesn't have a ny followers. Go follow them 😀"
                     DispatchQueue.main.async { self.showEmptyStateView(with: message, in: self.view) }
                     return
                 }

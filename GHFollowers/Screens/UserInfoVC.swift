@@ -15,9 +15,9 @@ protocol UserInfoVCDelegate: class{
 
 class UserInfoVC: GFDataLoadingVC {
 
-   let headerView = UIView()
-   let itemViewOne = UIView()
-   let itemViewTwo = UIView()
+    let headerView = UIView()
+    let itemViewOne = UIView()
+    let itemViewTwo = UIView()
     let dateLabel = GFBodyLabel(textAlignment: .center)
     var ItemViews: [UIView] = []
     

@@ -24,14 +24,13 @@ class SearchVC: UIViewController {
         configureLogoImageView()
         configureTextField()
         configureCallToActionButton()
-        createDismissKeyboardTapGesture()
-      
+        createDismissKeyboardTapGesture() 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         usernameTextField.text = ""
-        navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     func createDismissKeyboardTapGesture() {
@@ -39,8 +38,7 @@ class SearchVC: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
-    @objc func pushFollowerListVC() {
-        
+    @objc func pushFollowerListVC() {        
         guard isUsernameEntered  else {
             presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter a username. We need to know who to look for 😀", buttonTitle: "Ok")
             return

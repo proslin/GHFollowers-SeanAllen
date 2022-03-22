@@ -66,6 +66,7 @@ class FavoritesListVC: GFDataLoadingVC {
 }
 
 extension FavoritesListVC: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return favorites.count
     }
