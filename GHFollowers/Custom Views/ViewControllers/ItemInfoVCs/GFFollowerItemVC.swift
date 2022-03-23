@@ -8,6 +8,7 @@
 import UIKit
 
 protocol GFFollowerItemVCDelegate: class{
+    
     func didTapGetFollowers(for user: User)
 }
 
@@ -20,16 +21,13 @@ class GFFollowerItemVC: GFItemInfoVC {
         self.delegate = delegate
     }
     
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureItems()
-        
     }
     
     private func configureItems() {
@@ -39,12 +37,6 @@ class GFFollowerItemVC: GFItemInfoVC {
     }
     
     override func actionButtonTapped() {
-        guard user.followers != 0 else {
-            presentGFAlertOnMainThread(title: "No followers", message: "This user has no followers", buttonTitle: "OK")
-            return
-        }
-        
-        delegate.didTapGetFollowers(for: user)
-       
+        delegate.didTapGetFollowers(for: user)       
     }
 }

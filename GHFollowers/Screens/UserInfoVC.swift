@@ -15,6 +15,7 @@ class UserInfoVC: GFDataLoadingVC {
     
     let scrollView = UIScrollView()
     let contentView = UIView()
+    
     let headerView = UIView()
     let itemViewOne = UIView()
     let itemViewTwo = UIView()
@@ -111,7 +112,6 @@ class UserInfoVC: GFDataLoadingVC {
         childVC.didMove(toParent: self)
     }
     
-    
     @objc func dismissVC() {
         dismiss(animated: true)
     }
@@ -128,7 +128,6 @@ extension UserInfoVC: GFRepoItemVCDelegate {
         presentSafariVC(with: url)
     }
 }
-
 
 extension UserInfoVC: GFFollowerItemVCDelegate {
     
